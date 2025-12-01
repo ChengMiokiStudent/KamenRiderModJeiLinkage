@@ -1,0 +1,24 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 0,
+  "experinence": 0,
+  "ingredients": [
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:redstone_block"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:iron_block"},
+
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:redstone_block"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:iron_block"},
+
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:gotcharddriver_leggings",
+    "count": 1
+  }
+}

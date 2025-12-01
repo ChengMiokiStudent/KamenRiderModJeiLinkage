@@ -1,0 +1,25 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 0,
+  "experinence": 0,
+  "ingredients": [
+
+    {"item": "kamen_rider_gotchard:legendpiece"},
+    {"item": "kamen_rider_gotchard:legendpiece"},
+    {"item": "kamen_rider_gotchard:legendpiece"},
+    {"item": "kamen_rider_gotchard:legendpiece"},
+    {"item": "kamen_rider_gotchard:legendpiece"},
+
+    {"item": "kamen_rider_gotchard:legendpiece"},
+    {"item": "kamen_rider_gotchard:legendpiece"},
+    {"item": "kamen_rider_gotchard:legendpiece"},
+    {"item": "kamen_rider_gotchard:legendpiece"},
+    {"item": "kamen_rider_gotchard:legendpiece"},
+
+    {"item": "kamen_rider_gotchard:legendpiece"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:legendfinishgun",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 0,
+  "experinence": 0,
+  "ingredients": [
+
+    {"item": "minecraft:ghast_tear"},
+    {"item": "minecraft:quartz"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:ghast_tear"},
+    {"item": "minecraft:iron_ingot"},
+
+    {"item": "minecraft:ghast_tear"},
+    {"item": "minecraft:quartz"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:ghast_tear"},
+    {"item": "minecraft:iron_ingot"},
+
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:alchemisring",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 2,
+  "experinence": 2000,
+  "ingredients": [
+    {"item": "minecraft:redstone_block"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:ender_eye"},
+    {"item": "minecraft:prismarine_crystals"},
+    {"item": "minecraft:phantom_membrane"},
+
+    {"item": "minecraft:redstone_block"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:heart_of_the_sea"},
+    {"item": "minecraft:prismarine_crystals"},
+    {"item": "minecraft:phantom_membrane"},
+
+    {"item": "kamen_rider_gotchard:alchemyringb"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:alchemyringa",
+    "count": 1
+  }
+}

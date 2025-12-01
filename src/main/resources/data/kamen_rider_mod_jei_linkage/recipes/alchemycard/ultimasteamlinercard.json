@@ -1,0 +1,25 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 4,
+  "experinence": 0,
+  "ingredients": [
+
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"},
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"},
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"},
+    {"item": "kamen_rider_gotchard:steamlinercard"},
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"},
+
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"},
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"},
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"},
+    {"tag": "kamen_rider_mod_jei_linkage:philosophersstone_two"},
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"},
+
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:ultimasteamlinercard",
+    "count": 1
+  }
+}

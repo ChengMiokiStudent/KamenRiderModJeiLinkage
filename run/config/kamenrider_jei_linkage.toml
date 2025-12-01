@@ -1,0 +1,5 @@
+
+["Player Login Messages"]
+	#是否启用玩家进入时发出作者名称等消息
+	"是否启用" = true
+

@@ -1,0 +1,25 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 0,
+  "experinence": 0,
+  "ingredients": [
+
+    {"item": "minecraft:emerald"},
+    {"item": "minecraft:blaze_powder"},
+    {"item": "minecraft:ghast_tear"},
+    {"item": "kamen_rider_gotchard:gotcharddriver_leggings"},
+    {"item": "minecraft:quartz"},
+
+    {"item": "minecraft:emerald"},
+    {"item": "minecraft:blaze_powder"},
+    {"item": "minecraft:ghast_tear"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:quartz"},
+
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:aichemisdriver_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 3,
+  "experinence": 0,
+  "ingredients": [
+
+    {"item": "minecraft:end_crystal"},
+    {"item": "minecraft:nether_star"},
+    {"item": "minecraft:emerald_block"},
+    {"tag": "kamen_rider_mod_jei_linkage:philosophersstone"},
+    {"item": "minecraft:diamond_block"},
+
+    {"item": "minecraft:end_crystal"},
+    {"item": "minecraft:nether_star"},
+    {"item": "minecraft:emerald_block"},
+    {"tag": "kamen_rider_mod_jei_linkage:philosophersstone"},
+    {"item": "minecraft:diamond_block"},
+
+    {"item": "minecraft:dragon_egg"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:rainboweggcard",
+    "count": 1
+  }
+}

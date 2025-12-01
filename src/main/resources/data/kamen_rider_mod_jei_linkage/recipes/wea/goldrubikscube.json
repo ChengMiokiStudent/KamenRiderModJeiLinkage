@@ -1,0 +1,25 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 4,
+  "experinence": 0,
+  "ingredients": [
+
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_block"},
+
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_block"},
+
+    {"item": "kamen_rider_gotchard:darkalchemymaterial"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:goldrubikscube",
+    "count": 1
+  }
+}

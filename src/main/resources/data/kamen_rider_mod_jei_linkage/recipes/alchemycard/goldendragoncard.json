@@ -1,0 +1,25 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 4,
+  "experinence": 0,
+  "ingredients": [
+
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_block"},
+    {"tag": "kamen_rider_mod_jei_linkage:philosophersstone"},
+    {"item": "kamen_rider_gotchard:rainbowdragonfirecard"},
+    {"item": "minecraft:gold_block"},
+
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_block"},
+    {"tag": "kamen_rider_mod_jei_linkage:philosophersstone"},
+    {"item": "kamen_rider_gotchard:rainbowdragoncard"},
+    {"item": "minecraft:gold_block"},
+
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:goldendragoncard",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 0,
+  "experinence": 0,
+  "ingredients": [
+
+    {"item": "kamen_rider_gotchard:anger"},
+    {"item": "kamen_rider_gotchard:anger"},
+    {"item": "minecraft:iron_ingot"},
+    {"item": "minecraft:iron_block"},
+    {"item": "minecraft:iron_ingot"},
+
+    {"item": "kamen_rider_gotchard:anger"},
+    {"item": "kamen_rider_gotchard:anger"},
+    {"item": "minecraft:iron_ingot"},
+    {"item": "minecraft:iron_block"},
+    {"item": "minecraft:iron_ingot"},
+
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:valvaradsword",
+    "count": 1
+  }
+}

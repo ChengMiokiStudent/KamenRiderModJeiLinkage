@@ -1,0 +1,25 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 0,
+  "experinence": 0,
+  "ingredients": [
+
+    {"item": "minecraft:blaze_powder"},
+    {"item": "minecraft:blaze_powder"},
+    {"item": "minecraft:ghast_tear"},
+    {"item": "kamen_rider_gotchard:uniconcard"},
+    {"item": "minecraft:ender_eye"},
+
+    {"item": "minecraft:blaze_powder"},
+    {"item": "minecraft:blaze_powder"},
+    {"item": "minecraft:ghast_tear"},
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:ender_eye"},
+
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:unicorncopycard",
+    "count": 1
+  }
+}

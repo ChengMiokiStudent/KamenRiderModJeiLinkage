@@ -1,0 +1,25 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 0,
+  "experinence": 0,
+  "ingredients": [
+
+    {"item": "minecraft:leather"},
+    {"item": "minecraft:iron_ingot"},
+    {"item": "minecraft:glass"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:glass"},
+
+    {"item": "minecraft:leather"},
+    {"item": "minecraft:iron_ingot"},
+    {"item": "minecraft:glass"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:glass"},
+
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:glasses",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 0,
+  "experinence": 0,
+  "ingredients": [
+
+    {"item": "minecraft:redstone_block"},
+    {"item": "minecraft:lapis_block"},
+    {"item": "minecraft:diamond"},
+    {"item": "minecraft:lapis_block"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+
+    {"item": "minecraft:redstone_block"},
+    {"item": "minecraft:lapis_block"},
+    {"item": "minecraft:diamond"},
+    {"item": "minecraft:lapis_block"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:xsaberclosed",
+    "count": 1
+  }
+}

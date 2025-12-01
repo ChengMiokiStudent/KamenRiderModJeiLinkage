@@ -1,0 +1,25 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 0,
+  "experinence": 0,
+  "ingredients": [
+
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_ingot"},
+    {"item": "kamen_rider_gotchard:legendpiece"},
+    {"item": "kamen_rider_gotchard:legendpiece"},
+    {"item": "minecraft:redstone"},
+
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_ingot"},
+    {"item": "kamen_rider_gotchard:legendpiece"},
+    {"item": "kamen_rider_gotchard:legendpiece"},
+    {"item": "minecraft:redstone"},
+
+    {"item": "minecraft:emerald_block"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:legenddriver_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 1,
+  "experinence": 1000,
+  "ingredients": [
+    {"item": "minecraft:lava_bucket"},
+    {"item": "minecraft:magma_cream"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:golden_apple"},
+    {"item": "minecraft:iron_block"},
+
+    {"item": "minecraft:lava_bucket"},
+    {"item": "minecraft:magma_cream"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:golden_apple"},
+    {"item": "minecraft:iron_block"},
+
+    {"item": "kamen_rider_gotchard:alchemyringc"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:alchemyringb",
+    "count": 1
+  }
+}

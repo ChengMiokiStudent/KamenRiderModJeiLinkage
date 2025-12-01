@@ -1,0 +1,24 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 3,
+  "experinence": 7000,
+  "ingredients": [
+    {"item": "minecraft:netherite_block"},
+    {"item": "minecraft:nether_star"},
+    {"item": "minecraft:end_crystal"},
+    {"item": "minecraft:diamond_block"},
+    {"item": "minecraft:emerald_block"},
+
+    {"item": "minecraft:netherite_block"},
+    {"item": "minecraft:nether_star"},
+    {"item": "minecraft:end_crystal"},
+    {"item": "minecraft:diamond_block"},
+    {"item": "minecraft:emerald_block"},
+
+    {"item": "kamen_rider_gotchard:alchemyringa"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:alchemyrings",
+    "count": 1
+  }
+}

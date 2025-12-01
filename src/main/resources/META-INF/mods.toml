@@ -1,0 +1,29 @@
+modLoader = "javafml" #mandatory
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
+[[mods]]
+modId = "kamen_rider_mod_jei_linkage"
+version = "1.1"
+displayName = "KamenRiderModJEILinkage"
+displayURL = "https://space.bilibili.com/1553817658?spm_id_from=333.1369.0.0"
+authors = "cheng017"
+description = "目前只给骑士冒险整合包用，如果用了并且发了整合包或视频请在BiliBili@我"
+
+[[dependencies.kamen_rider_mod_jei_linkage]]
+modId = "forge"
+mandatory = true
+versionRange = "${forge_version_range}"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.kamen_rider_mod_jei_linkage]]
+modId = "minecraft"
+mandatory = true
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.kamen_rider_mod_jei_linkage]]
+modId="jei"
+mandatory=false
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"

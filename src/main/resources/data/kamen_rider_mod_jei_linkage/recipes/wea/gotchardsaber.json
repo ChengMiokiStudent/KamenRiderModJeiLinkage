@@ -1,0 +1,25 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 0,
+  "experinence": 0,
+  "ingredients": [
+
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:diamond_sword"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:gotchardsaber",
+    "count": 1
+  }
+}

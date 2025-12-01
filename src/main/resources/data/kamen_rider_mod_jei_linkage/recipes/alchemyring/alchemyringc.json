@@ -1,0 +1,24 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:alchemistable_jei",
+  "level": 0,
+  "experinence": 0,
+  "ingredients": [
+    {"item": "minecraft:light_blue_dye"},
+    {"item": "minecraft:lapis_lazuli"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:iron_ingot"},
+    {"item": "minecraft:iron_ingot"},
+
+    {"item": "minecraft:light_blue_dye"},
+    {"item": "minecraft:lapis_lazuli"},
+    {"item": "kamen_rider_gotchard:gotchardstone"},
+    {"item": "minecraft:iron_ingot"},
+    {"item": "minecraft:iron_ingot"},
+
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"}
+  ],
+  "output": {
+    "item": "kamen_rider_gotchard:alchemyringc",
+    "count": 1
+  }
+}
