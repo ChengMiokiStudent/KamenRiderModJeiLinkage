@@ -1,0 +1,19 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:gotchard_henshin_card",
+  "level": 3,
+  "rider": "valvarad",
+  "from": "valvarad_kurogane",
+  "ingredients": [
+
+    {"item": "kamen_rider_gotchard:silvervbbelt_leggings"},
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"},
+
+    {"item": "kamen_rider_gotchard:machwheelsilvercard"},
+    {"item": "kamen_rider_gotchard:daiohnisilvercard"}
+
+  ],
+  "output": {
+    "item": "minecraft:spyglass",
+    "count": 1
+  }
+}

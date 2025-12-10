@@ -1,0 +1,19 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:gotchard_henshin_card",
+  "level": 4,
+  "rider": "gotchard",
+  "from": "ultima_steamhopper",
+  "ingredients": [
+
+    {"item": "kamen_rider_gotchard:ultimagoldalchemisbelt_leggings"},
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"},
+
+    {"item": "kamen_rider_gotchard:ultimahopper_1card"},
+    {"item": "kamen_rider_gotchard:ultimasteamlinercard"}
+
+  ],
+  "output": {
+    "item": "minecraft:spyglass",
+    "count": 1
+  }
+}

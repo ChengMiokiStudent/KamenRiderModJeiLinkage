@@ -1,0 +1,19 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:gotchard_henshin_card",
+  "level": 0,
+  "rider": "eldorado",
+  "from": "eld",
+  "ingredients": [
+
+    {"item": "kamen_rider_gotchard:transformationdriver_leggings"},
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"},
+
+    {"item": "kamen_rider_gotchard:goldendragoncard"},
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"}
+
+  ],
+  "output": {
+    "item": "minecraft:spyglass",
+    "count": 1
+  }
+}

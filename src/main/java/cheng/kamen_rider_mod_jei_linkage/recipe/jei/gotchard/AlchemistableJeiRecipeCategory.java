@@ -1,6 +1,8 @@
-package cheng.kamen_rider_gotchard_jei.kamen_rider_gotchard;
+package cheng.kamen_rider_mod_jei_linkage.recipe.jei.gotchard;
 
-import cheng.kamen_rider_gotchard_jei.KamenRiderModJeiLinkage;
+import cheng.kamen_rider_mod_jei_linkage.KamenRiderModJeiLinkage;
+import cheng.kamen_rider_mod_jei_linkage.recipe.ModUtil;
+import cheng.kamen_rider_mod_jei_linkage.recipe.kamen_rider_gotchard.AlchemistableJeiRecipe;
 import com.mojang.blaze3d.vertex.PoseStack;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
@@ -17,6 +19,7 @@ import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.checkerframework.common.reflection.qual.UnknownMethod;
 import org.jetbrains.annotations.NotNull;
 
 public class AlchemistableJeiRecipeCategory implements IRecipeCategory<AlchemistableJeiRecipe> {
@@ -27,7 +30,7 @@ public class AlchemistableJeiRecipeCategory implements IRecipeCategory<Alchemist
 
     public AlchemistableJeiRecipeCategory(IGuiHelper helper) {
         this.background = helper.createDrawable(TEXTURE, 0, 0, 175, 91);
-        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("kamen_rider_gotchard:alchemistable"))));
+        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, ModUtil.item("kamen_rider_gotchard:alchemistable"));
     }
 
     @Override
@@ -47,6 +50,7 @@ public class AlchemistableJeiRecipeCategory implements IRecipeCategory<Alchemist
         return this.icon;
     }
 
+    @Override
     public void setRecipe(IRecipeLayoutBuilder builder, AlchemistableJeiRecipe recipe, @NotNull IFocusGroup focuses) {
         builder.addSlot(RecipeIngredientRole.INPUT, 7, 7).addIngredients(recipe.getIngredients().get(0));
         builder.addSlot(RecipeIngredientRole.INPUT, 25, 25).addIngredients(recipe.getIngredients().get(1));
@@ -70,30 +74,33 @@ public class AlchemistableJeiRecipeCategory implements IRecipeCategory<Alchemist
         // 绘制自定义信息
         switch (recipe.getLevel()){
             case 0: {
-                Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard_jei.level0"), levelGuiK, levelGuiH, 0x404040);
+                Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard.level0"), levelGuiK, levelGuiH, 0x404040);
                 break;
             }
             case 1: {
-                Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard_jei.level1"), levelGuiK, levelGuiH, 0x404040);
+                Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard.level1"), levelGuiK, levelGuiH, 0x404040);
                 if (recipe.getExperinence() != 0)
-                    Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard_jei.experinence1").append(String.valueOf(recipe.getExperinence())).append(new TranslatableComponent("jei.kamen_rider_gotchard_jei.experinence11")) , experinenceGuiK, experinenceGuiH, 0x404040);
+                    Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard.experinence1").append(String.valueOf(recipe.getExperinence())).append(new TranslatableComponent("jei.kamen_rider_gotchard.experinence11")) , experinenceGuiK, experinenceGuiH, 0x404040);
                 break;
             }
             case 2: {
-                Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard_jei.level2"), levelGuiK, levelGuiH, 0x404040);
+                Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard.level2"), levelGuiK, levelGuiH, 0x404040);
                 if (recipe.getExperinence() != 0)
-                    Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard_jei.experinence2").append(String.valueOf(recipe.getExperinence())).append(new TranslatableComponent("jei.kamen_rider_gotchard_jei.experinence22")) , experinenceGuiK, experinenceGuiH, 0x404040);
+                    Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard.experinence2").append(String.valueOf(recipe.getExperinence())).append(new TranslatableComponent("jei.kamen_rider_gotchard.experinence22")) , experinenceGuiK, experinenceGuiH, 0x404040);
                 break;
             }
             case 3: {
-                Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard_jei.level3"), levelGuiK, levelGuiH, 0x404040);
+                Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard.level3"), levelGuiK, levelGuiH, 0x404040);
                 if (recipe.getExperinence() != 0)
-                    Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard_jei.experinence3").append(String.valueOf(recipe.getExperinence())).append(new TranslatableComponent("jei.kamen_rider_gotchard_jei.experinence33")) , experinenceGuiK, experinenceGuiH, 0x404040);
+                    Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard.experinence3").append(String.valueOf(recipe.getExperinence())).append(new TranslatableComponent("jei.kamen_rider_gotchard.experinence33")) , experinenceGuiK, experinenceGuiH, 0x404040);
                 break;
             }
             case 4: {
-                Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard_jei.level4"), levelGuiK, levelGuiH, 0x404040);
+                Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard.level4"), levelGuiK, levelGuiH, 0x404040);
                 break;
+            }
+            default: {
+                Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.kamen_rider_gotchard.level0"), levelGuiK, levelGuiH, 0x404040);
             }
         }
     }

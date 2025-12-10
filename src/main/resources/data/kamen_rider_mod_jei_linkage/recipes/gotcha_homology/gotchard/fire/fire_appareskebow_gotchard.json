@@ -1,0 +1,19 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:gotchard_henshin_card",
+  "level": 0,
+  "rider": "gotchard",
+  "from": "fire_appareskebow",
+  "ingredients": [
+
+    {"item": "kamen_rider_gotchard:gotcharddriver_leggings"},
+    {"item": "kamen_rider_gotchard:gotchardigniter"},
+
+    {"item": "kamen_rider_gotchard:skiboardcard"},
+    {"item": "kamen_rider_gotchard:warriorcard"}
+
+  ],
+  "output": {
+    "item": "minecraft:spyglass",
+    "count": 1
+  }
+}

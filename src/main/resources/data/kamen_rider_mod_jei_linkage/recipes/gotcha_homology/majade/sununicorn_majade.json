@@ -1,0 +1,19 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:gotchard_henshin_card",
+  "level": 2,
+  "rider": "majade",
+  "from": "sununicorn",
+  "ingredients": [
+
+    {"item": "kamen_rider_gotchard:aichemisdriver_leggings"},
+    {"item": "kamen_rider_gotchard:alchemisring"},
+
+    {"item": "kamen_rider_gotchard:uniconcard"},
+    {"item": "kamen_rider_gotchard:suncard"}
+
+  ],
+  "output": {
+    "item": "minecraft:spyglass",
+    "count": 1
+  }
+}

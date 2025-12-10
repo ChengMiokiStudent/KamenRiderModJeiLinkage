@@ -1,6 +1,6 @@
-package cheng.kamen_rider_gotchard_jei.kamen_rider_gotchard;
+package cheng.kamen_rider_mod_jei_linkage.recipe.kamen_rider_gotchard;
 
-import cheng.kamen_rider_gotchard_jei.KamenRiderModJeiLinkage;
+import cheng.kamen_rider_mod_jei_linkage.KamenRiderModJeiLinkage;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.minecraft.core.NonNullList;
@@ -98,7 +98,7 @@ public class AlchemistableJeiRecipe implements Recipe<SimpleContainer> {
 
     public static class Serializer implements RecipeSerializer<AlchemistableJeiRecipe> {
         public static final Serializer INSTANCE = new Serializer();
-        public static final ResourceLocation ID = new ResourceLocation(KamenRiderModJeiLinkage.Assest, "alchemistable_jei");
+        public static final ResourceLocation ID = new ResourceLocation(KamenRiderModJeiLinkage.Assest, Type.ID);
         private ResourceLocation registryName = ID;
 
         @Override

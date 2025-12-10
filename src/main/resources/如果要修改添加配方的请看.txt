@@ -1,0 +1,52 @@
+请注意：
+此模组的配方只给其他模组添加了JEI联动，并不代表能用于修改其他模组的配方
+出现多少个数值("[]"里的)就必须填多少个数值，否则会导致配方失败
+请按照格式修改，如果出现配方失败的情况请修改为这个 {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"} 是空气的意思
+
+配方添加的方法：
+打开data/kamen_rider_mod_jei_linkage/recipes后，会看到两个文件夹
+alchemistable是炼金术台的
+gotcha_homology是炼金同调变身的
+
+打开各个文件夹后：
+炼金术台:
+随机打开一个
+可以看到
+"type" "level" "experinence" "ingredients" "output"
+type是配方的类型
+level是炼金术需要的等级(再次声明：只是给其他模组添加了JEI联动，并不代表能用于修改其他模组的配方)
+experinence是炼成炼金术戒指所需的经验(0为不需要，并且不显示)
+ingredients是数组，里面的可以是物品(item)或标签(tag)
+顺序:(注意啊，数组正常是从0开始，但这里为了能理解就用了从1开始)
+    1         12         6
+       2              7
+    5     3   11   8     10
+       4              9
+11是放中间的物品
+output是放第12个物品的(输出物品)
+
+炼金同调变身:
+打开后可以看到
+"type" "level" "rider" "from" "ingredients" "output"
+type上面说了
+level是变身需要的等级
+rider和from是最简单粗暴的，因为是直接使用语言文件翻译的(技术力不足，按照个人想象是用json文件数组(rider)里放(form))
+ingredients同上
+
+顺序：
+    2
+4   1   3
+1为驱动器
+2为面板等前提
+3为主手的凯米卡
+4为副手的凯米卡
+
+当你改完后去语言文件那，在assets/kamen_rider_mod_jei_linkage/lang/zh_cn.json中
+如果是修改了rider的
+在"jei.kamen_rider_gotchard.henshin.rider."的点"."后面加上在rider里填的值，
+接着打上冒号":"(注意是英文的冒号，中文的会报错)
+然后再打英文的双引号""，双引号里面填你填的的骑士名称
+form(注意是form不是from)
+在"jei.kamen_rider_gotchard.henshin.form."的点"."后面加上在form里填的值，
+接着打上冒号":"(注意是英文的冒号，中文的会报错)
+然后再打英文的双引号""，双引号里面填你填的的形态名称

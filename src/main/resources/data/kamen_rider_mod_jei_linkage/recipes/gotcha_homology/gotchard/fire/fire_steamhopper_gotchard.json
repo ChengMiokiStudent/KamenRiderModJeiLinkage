@@ -1,0 +1,19 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:gotchard_henshin_card",
+  "level": 0,
+  "rider": "gotchard",
+  "from": "fire_steamhopper",
+  "ingredients": [
+
+    {"item": "kamen_rider_gotchard:gotcharddriver_leggings"},
+    {"item": "kamen_rider_gotchard:gotchardigniter"},
+
+    {"item": "kamen_rider_gotchard:hopper_1card"},
+    {"item": "kamen_rider_gotchard:steamlinercard"}
+
+  ],
+  "output": {
+    "item": "minecraft:spyglass",
+    "count": 1
+  }
+}

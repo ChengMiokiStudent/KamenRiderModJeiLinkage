@@ -1,0 +1,19 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:gotchard_henshin_card",
+  "level": 3,
+  "rider": "wind",
+  "from": "blackbahamut_wind",
+  "ingredients": [
+
+    {"item": "kamen_rider_gotchard:aichemisdriver_leggings"},
+    {"item": "kamen_rider_gotchard:alchemisring"},
+
+    {"item": "kamen_rider_gotchard:gigabahamcard"},
+    {"item": "kamen_rider_gotchard:kuroanacard"}
+
+  ],
+  "output": {
+    "item": "minecraft:spyglass",
+    "count": 1
+  }
+}

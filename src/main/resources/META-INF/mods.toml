@@ -1,12 +1,13 @@
 modLoader = "javafml" #mandatory
 loaderVersion = "${loader_version_range}"
-license = "${mod_license}"
+license="Academic Free License v3.0"
 [[mods]]
 modId = "kamen_rider_mod_jei_linkage"
-version = "1.1"
+version = "1.2"
 displayName = "KamenRiderModJEILinkage"
 displayURL = "https://space.bilibili.com/1553817658?spm_id_from=333.1369.0.0"
 authors = "cheng017"
+mod_license = "只可用于非商业交易等 For non-commercial transactions only"
 description = "目前只给骑士冒险整合包用，如果用了并且发了整合包或视频请在BiliBili@我"
 
 [[dependencies.kamen_rider_mod_jei_linkage]]

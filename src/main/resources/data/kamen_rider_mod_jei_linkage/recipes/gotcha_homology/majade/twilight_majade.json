@@ -1,0 +1,19 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:gotchard_henshin_card",
+  "level": 3,
+  "rider": "majade",
+  "from": "twilight_majade",
+  "ingredients": [
+
+    {"item": "kamen_rider_gotchard:aichemisdriver_leggings"},
+    {"tag": "kamen_rider_mod_jei_linkage:twilight_majade_ring"},
+
+    {"item": "kamen_rider_gotchard:dawnuniconcard"},
+    {"item": "kamen_rider_gotchard:dawnsuncard"}
+
+  ],
+  "output": {
+    "item": "minecraft:spyglass",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:gotchard_henshin_card",
+  "level": 0,
+  "rider": "legend",
+  "from": "gorgeous_grand_zi_o",
+  "ingredients": [
+
+    {"item": "kamen_rider_gotchard:legenddriver_leggings"},
+    {"item": "kamen_rider_gotchard:legendfinishblankbase"},
+
+    {"item": "kamen_rider_gotchard:grandziocard"},
+    {"tag": "kamen_rider_mod_jei_linkage:jei_empty_tag"}
+
+  ],
+  "output": {
+    "item": "minecraft:spyglass",
+    "count": 1
+  }
+}
