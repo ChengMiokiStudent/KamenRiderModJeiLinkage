@@ -1,0 +1,13 @@
+{
+  "type": "kamen_rider_mod_jei_linkage:fullbottle_purifier",
+  "ingredients": [
+
+    {"item": "kamen_rider_exvs_over_build:blank_full_bottle"},
+    {"item": "kamen_rider_exvs_over_build:nebula_gas"},
+    {"item": "kamen_rider_exvs_over_build:smash_bottle"}
+  ],
+  "output": {
+    "item": "kamen_rider_exvs_over_build:rabbit_full_bottle",
+    "count": 1
+  }
+}

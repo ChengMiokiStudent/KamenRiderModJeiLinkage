@@ -152,6 +152,7 @@ public class GotchardHenshinCardJeiRecipe implements Recipe<SimpleContainer> {
             }
             buf.writeInt(recipe.getHenshinlevel());
             buf.writeUtf(recipe.getRidername());
+            buf.writeUtf(recipe.getFromname());
 
             buf.writeItemStack(recipe.getResultItem(), false);
         }

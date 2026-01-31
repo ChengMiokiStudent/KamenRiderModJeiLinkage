@@ -30,6 +30,8 @@
 - [Academic Free License v3.0]()
 
 ## 更新记录
+- 1.3
+- 添加了build猛击瓶净化器JEI界面
 - 1.2
 - 添加了歌查德炼成同调的JEI界面
 - 1.1

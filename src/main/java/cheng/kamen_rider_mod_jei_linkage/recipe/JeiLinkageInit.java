@@ -1,8 +1,11 @@
 package cheng.kamen_rider_mod_jei_linkage.recipe;
 
 import cheng.kamen_rider_mod_jei_linkage.KamenRiderModJeiLinkage;
+import cheng.kamen_rider_mod_jei_linkage.recipe.build.BuildLoaded;
+import cheng.kamen_rider_mod_jei_linkage.recipe.build.FullbottlePurifierJeiRecipe;
 import cheng.kamen_rider_mod_jei_linkage.recipe.kamen_rider_gotchard.AlchemistableJeiRecipe;
 import cheng.kamen_rider_mod_jei_linkage.recipe.kamen_rider_gotchard.GotchardHenshinCardJeiRecipe;
+import cheng.kamen_rider_mod_jei_linkage.recipe.kamen_rider_gotchard.KamenRiderGotchardLoaded;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.event.RegistryEvent;
@@ -15,7 +18,11 @@ public class JeiLinkageInit {
     // 注册配方序列化器
     @SubscribeEvent
     public static void registerRecipeSerializers(final RegistryEvent.Register<RecipeSerializer<?>> event) {
-        event.getRegistry().register(AlchemistableJeiRecipe.Serializer.INSTANCE.setRegistryName(new ResourceLocation(KamenRiderModJeiLinkage.Assest, AlchemistableJeiRecipe.Type.ID)));
-        event.getRegistry().register(GotchardHenshinCardJeiRecipe.Serializer.INSTANCE.setRegistryName(new ResourceLocation(KamenRiderModJeiLinkage.Assest, GotchardHenshinCardJeiRecipe.Type.ID)));
+        if (KamenRiderGotchardLoaded.KamenRiderGotchard.isLoaded()){
+            event.getRegistry().register(AlchemistableJeiRecipe.Serializer.INSTANCE.setRegistryName(new ResourceLocation(KamenRiderModJeiLinkage.Assest, AlchemistableJeiRecipe.Type.ID)));
+            event.getRegistry().register(GotchardHenshinCardJeiRecipe.Serializer.INSTANCE.setRegistryName(new ResourceLocation(KamenRiderModJeiLinkage.Assest, GotchardHenshinCardJeiRecipe.Type.ID)));
+        }
+        if (BuildLoaded.KamenRiderBuild.isLoaded())
+         event.getRegistry().register(FullbottlePurifierJeiRecipe.Serializer.INSTANCE.setRegistryName(new ResourceLocation(KamenRiderModJeiLinkage.Assest, FullbottlePurifierJeiRecipe.Type.ID)));
     }
 }
