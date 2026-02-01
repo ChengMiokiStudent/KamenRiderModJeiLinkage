@@ -1,10 +1,9 @@
-package cheng.kamen_rider_mod_jei_linkage.i_do_not_no;
+package cheng.kamen_rider_mod_jei_linkage;
 
 import cheng.kamen_rider_mod_jei_linkage.config.KamenriderModJeiLinkageConfig;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -16,10 +15,10 @@ import javax.annotation.Nullable;
 public class OnPlayerLoggin {
     @SubscribeEvent
     public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-        execute(event, event.getPlayer());
+        execute(event.getPlayer());
     }
 
-    private static void execute(@Nullable Event event, Entity entity) {
+    private static void execute(Entity entity) {
         if (entity == null)
             return;
         if (KamenriderModJeiLinkageConfig.PLAYER_LOGIN_MESSAGE.get())

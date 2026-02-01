@@ -1,6 +1,7 @@
 package cheng.kamen_rider_mod_jei_linkage.recipe.kamen_rider_gotchard;
 
 import cheng.kamen_rider_mod_jei_linkage.KamenRiderModJeiLinkage;
+import cheng.kamen_rider_mod_jei_linkage.recipe.ModRecipeType;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.minecraft.core.NonNullList;
@@ -45,27 +46,22 @@ public class AlchemistableJeiRecipe implements Recipe<SimpleContainer> {
         return true;
     }
 
-    @Override
     public @NotNull NonNullList<Ingredient> getIngredients() {
         return this.recipeItems;
     }
 
-    @Override
     public @NotNull ItemStack assemble(@NotNull SimpleContainer pContainer) {
         return this.output;
     }
 
-    @Override
     public boolean canCraftInDimensions(int pWidth, int pHeight) {
         return true;
     }
 
-    @Override
     public @NotNull ItemStack getResultItem() {
         return this.output.copy();
     }
 
-    @Override
     public @NotNull ResourceLocation getId() {
         return this.id;
     }
@@ -78,28 +74,16 @@ public class AlchemistableJeiRecipe implements Recipe<SimpleContainer> {
         return this.experinence;
     }
 
-    @Override
     public @NotNull RecipeType<?> getType() {
-        return Type.INSTANCE;
+        return ModRecipeType.Alchemistable.get();
     }
 
-    @Override
     public @NotNull RecipeSerializer<?> getSerializer() {
-        return Serializer.INSTANCE;
-    }
-
-    public static class Type implements RecipeType<AlchemistableJeiRecipe> {
-        public static final Type INSTANCE = new Type();
-        public static final String ID = "alchemistable_jei";
-
-        private Type() {
-        }
+        return ModRecipeType.AlchemistableSerializer.get();
     }
 
     public static class Serializer implements RecipeSerializer<AlchemistableJeiRecipe> {
-        public static final Serializer INSTANCE = new Serializer();
-        public static final ResourceLocation ID = new ResourceLocation(KamenRiderModJeiLinkage.Assest, Type.ID);
-        private ResourceLocation registryName = ID;
+        private ResourceLocation registryName = ModRecipeType.AlchemistableSerializer.getId();
 
         @Override
         public @NotNull AlchemistableJeiRecipe fromJson(@NotNull ResourceLocation pRecipeId, @NotNull JsonObject pSerializedRecipe) {

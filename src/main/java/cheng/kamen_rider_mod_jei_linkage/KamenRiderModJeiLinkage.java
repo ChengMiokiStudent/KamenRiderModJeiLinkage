@@ -1,7 +1,7 @@
 package cheng.kamen_rider_mod_jei_linkage;
 
 import cheng.kamen_rider_mod_jei_linkage.config.KamenriderModJeiLinkageConfig;
-import cheng.kamen_rider_mod_jei_linkage.recipe.JeiLinkageInit;
+import cheng.kamen_rider_mod_jei_linkage.recipe.ModRecipeType;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -12,15 +12,17 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
 import org.slf4j.Logger;
 
-@Mod("kamen_rider_mod_jei_linkage")
+@Mod(KamenRiderModJeiLinkage.MODID)
 public class KamenRiderModJeiLinkage {
 
     private static final Logger LOGGER = LogUtils.getLogger();
-    public static final String Assest = "kamen_rider_mod_jei_linkage";
     public static final String MODID = "kamen_rider_mod_jei_linkage";
 
     public KamenRiderModJeiLinkage() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModRecipeType.RECIPE_TYPES.register(modEventBus);
+        ModRecipeType.RECIPE_SERIALIZERS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 

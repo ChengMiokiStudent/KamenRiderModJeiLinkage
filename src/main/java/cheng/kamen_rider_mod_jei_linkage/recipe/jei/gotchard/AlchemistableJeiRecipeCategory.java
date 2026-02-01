@@ -1,41 +1,34 @@
 package cheng.kamen_rider_mod_jei_linkage.recipe.jei.gotchard;
 
 import cheng.kamen_rider_mod_jei_linkage.KamenRiderModJeiLinkage;
+import cheng.kamen_rider_mod_jei_linkage.recipe.ModRecipeType;
 import cheng.kamen_rider_mod_jei_linkage.recipe.ModUtil;
 import cheng.kamen_rider_mod_jei_linkage.recipe.kamen_rider_gotchard.AlchemistableJeiRecipe;
 import com.mojang.blaze3d.vertex.PoseStack;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
+import mezz.jei.api.gui.ingredient.IRecipeSlotView;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
 import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
-import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.registries.ForgeRegistries;
-import org.checkerframework.common.reflection.qual.UnknownMethod;
 import org.jetbrains.annotations.NotNull;
 
 public class AlchemistableJeiRecipeCategory implements IRecipeCategory<AlchemistableJeiRecipe> {
-    public static final ResourceLocation UID = new ResourceLocation(KamenRiderModJeiLinkage.Assest, "alchemistable_jei");
-    public static final ResourceLocation TEXTURE = new ResourceLocation(KamenRiderModJeiLinkage.Assest, "textures/jei/alchemistable.png");
+    public static final ResourceLocation UID = ModRecipeType.Alchemistable.getId();
+    public static final ResourceLocation TEXTURE = new ResourceLocation(KamenRiderModJeiLinkage.MODID, "textures/jei/alchemistable.png");
     private final IDrawable background;
     private final IDrawable icon;
 
     public AlchemistableJeiRecipeCategory(IGuiHelper helper) {
         this.background = helper.createDrawable(TEXTURE, 0, 0, 175, 91);
         this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, ModUtil.item("kamen_rider_gotchard:alchemistable"));
-    }
-
-    @Override
-    public @NotNull RecipeType<AlchemistableJeiRecipe> getRecipeType() {
-        return new RecipeType<>(UID, AlchemistableJeiRecipe.class);
     }
 
     public @NotNull Component getTitle() {
@@ -104,11 +97,13 @@ public class AlchemistableJeiRecipeCategory implements IRecipeCategory<Alchemist
             }
         }
     }
-
+    @SuppressWarnings("removal")
+    @NotNull
     public ResourceLocation getUid() {
         return UID;
     }
-
+    @SuppressWarnings("removal")
+    @NotNull
     public Class<? extends AlchemistableJeiRecipe> getRecipeClass() {
         return AlchemistableJeiRecipe.class;
     }

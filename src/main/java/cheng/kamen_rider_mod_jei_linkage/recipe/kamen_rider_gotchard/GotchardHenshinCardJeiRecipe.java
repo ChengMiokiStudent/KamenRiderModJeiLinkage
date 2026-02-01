@@ -1,6 +1,7 @@
 package cheng.kamen_rider_mod_jei_linkage.recipe.kamen_rider_gotchard;
 
 import cheng.kamen_rider_mod_jei_linkage.KamenRiderModJeiLinkage;
+import cheng.kamen_rider_mod_jei_linkage.recipe.ModRecipeType;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import javax.annotation.Nullable;
@@ -34,7 +35,6 @@ public class GotchardHenshinCardJeiRecipe implements Recipe<SimpleContainer> {
         this.recipeItems = recipeItems;
     }
 
-    @Override
     public boolean matches(SimpleContainer pContainer, Level pLevel) {
         return pLevel.isClientSide() ? false : false;
     }
@@ -51,53 +51,36 @@ public class GotchardHenshinCardJeiRecipe implements Recipe<SimpleContainer> {
         return this.fromname;
     }
 
-    @Override
     public NonNullList<Ingredient> getIngredients() {
         return this.recipeItems;
     }
 
-    @Override
     public ItemStack assemble(SimpleContainer pContainer) {
         return this.output;
     }
 
-    @Override
     public boolean canCraftInDimensions(int pWidth, int pHeight) {
         return true;
     }
 
-    @Override
     public ItemStack getResultItem() {
         return this.output.copy();
     }
 
-    @Override
     public ResourceLocation getId() {
         return this.id;
     }
 
-    @Override
     public RecipeType<?> getType() {
-        return Type.INSTANCE;
+        return ModRecipeType.GotchardRecipe.get();
     }
 
-    @Override
     public RecipeSerializer<?> getSerializer() {
-        return Serializer.INSTANCE;
-    }
-
-    public static class Type implements RecipeType<GotchardHenshinCardJeiRecipe> {
-        public static final Type INSTANCE = new Type();
-        public static final String ID = "gotchard_henshin_card";
-
-        private Type() {
-        }
+        return ModRecipeType.GotchardSerializer.get();
     }
 
     public static class Serializer implements RecipeSerializer<GotchardHenshinCardJeiRecipe> {
-        public static final Serializer INSTANCE = new Serializer();
-        public static final ResourceLocation ID = new ResourceLocation(KamenRiderModJeiLinkage.Assest, Type.ID);
-        private ResourceLocation registryName = ID;
+        private ResourceLocation registryName = ModRecipeType.GotchardRecipe.getId();
 
         @Override
         public GotchardHenshinCardJeiRecipe fromJson(ResourceLocation pRecipeId, JsonObject pSerializedRecipe) {

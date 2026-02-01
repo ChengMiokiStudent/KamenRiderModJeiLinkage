@@ -1,6 +1,7 @@
 package cheng.kamen_rider_mod_jei_linkage.recipe.jei.build;
 
 import cheng.kamen_rider_mod_jei_linkage.KamenRiderModJeiLinkage;
+import cheng.kamen_rider_mod_jei_linkage.recipe.ModRecipeType;
 import cheng.kamen_rider_mod_jei_linkage.recipe.ModUtil;
 import cheng.kamen_rider_mod_jei_linkage.recipe.build.FullbottlePurifierJeiRecipe;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -11,7 +12,6 @@ import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
 import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
-import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
@@ -19,10 +19,8 @@ import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Objects;
-
 public class FullbottleJeiRecipeCategory implements IRecipeCategory<FullbottlePurifierJeiRecipe> {
-    public static final ResourceLocation UID = new ResourceLocation(KamenRiderModJeiLinkage.MODID, "fullbottle_purifier");
+    public static final ResourceLocation UID = ModRecipeType.FullbottlePurifier.getId();
     public static final ResourceLocation TEXTURE = new ResourceLocation(KamenRiderModJeiLinkage.MODID, "textures/jei/fullbottle_purifier.png");
     private final IDrawable background;
     private final IDrawable icon;
@@ -61,14 +59,14 @@ public class FullbottleJeiRecipeCategory implements IRecipeCategory<FullbottlePu
         Minecraft.getInstance().font.draw(stack, new TranslatableComponent("jei.build.draw1"), 56, 66, 0x404040);
     }
 
+    @SuppressWarnings("removal")
+    @NotNull
     public ResourceLocation getUid() {
         return UID;
     }
 
-    public @NotNull RecipeType<FullbottlePurifierJeiRecipe> getRecipeType(){
-        return new RecipeType<>(UID, FullbottlePurifierJeiRecipe.class);
-    }
-
+    @SuppressWarnings("removal")
+    @NotNull
     public Class<? extends FullbottlePurifierJeiRecipe> getRecipeClass() {
         return FullbottlePurifierJeiRecipe.class;
     }

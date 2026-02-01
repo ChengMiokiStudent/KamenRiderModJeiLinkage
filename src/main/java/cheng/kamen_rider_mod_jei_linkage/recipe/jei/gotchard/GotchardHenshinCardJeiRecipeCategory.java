@@ -2,6 +2,7 @@ package cheng.kamen_rider_mod_jei_linkage.recipe.jei.gotchard;
 
 import cheng.kamen_rider_mod_jei_linkage.KamenRiderModJeiLinkage;
 import cheng.kamen_rider_mod_jei_linkage.config.KamenriderModJeiLinkageConfig;
+import cheng.kamen_rider_mod_jei_linkage.recipe.ModRecipeType;
 import cheng.kamen_rider_mod_jei_linkage.recipe.ModUtil;
 import cheng.kamen_rider_mod_jei_linkage.recipe.kamen_rider_gotchard.GotchardHenshinCardJeiRecipe;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -18,12 +19,13 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
+import org.checkerframework.common.reflection.qual.UnknownMethod;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
 public class GotchardHenshinCardJeiRecipeCategory implements IRecipeCategory<GotchardHenshinCardJeiRecipe> {
-    public static final ResourceLocation UID = new ResourceLocation(KamenRiderModJeiLinkage.MODID, "gotchard_henshin_card");
+    public static final ResourceLocation UID = ModRecipeType.GotchardRecipe.getId();
     public static final ResourceLocation TEXTURE = new ResourceLocation(KamenRiderModJeiLinkage.MODID, "textures/jei/gotchard_henshin_card.png");
     private final IDrawable background;
     private final IDrawable icon;
@@ -89,15 +91,14 @@ public class GotchardHenshinCardJeiRecipeCategory implements IRecipeCategory<Got
         putRiderName(recipe,stack,currentRiderH,currentRiderK);
         putFormName(recipe,stack,currentFormH,currentFormK);
     }
-
+    @SuppressWarnings("removal")
+    @NotNull
     public ResourceLocation getUid() {
         return UID;
     }
 
-    public @NotNull RecipeType<GotchardHenshinCardJeiRecipe> getRecipeType(){
-        return new RecipeType<>(UID, GotchardHenshinCardJeiRecipe.class);
-    }
-
+    @SuppressWarnings("removal")
+    @NotNull
     public Class<? extends GotchardHenshinCardJeiRecipe> getRecipeClass() {
         return GotchardHenshinCardJeiRecipe.class;
     }

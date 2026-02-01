@@ -20,12 +20,12 @@ public class KamenriderModJeiLinkageConfig {
         PLAYER_LOGIN_MESSAGE = BUILDER
                 .comment("是否启用玩家进入时发出作者名称等消息(true为是,false为否)")
                 .define("是否启用",true);
-
+        BUILDER.pop();
         BUILDER.push("JEI Gotchard Category");
         GOTCHARDHENSHINCARD = BUILDER
                 .comment("是否启用歌查德变身的JEI界面的催化剂(配方左边的工作方块类似的)")
                 .define("是否启用",false);
-
+        BUILDER.pop();
         BUILDER.push("Gotchard Recipe");
         WUXIANZHIQISHI = BUILDER
                 .comment("是否启用歌查德变身的JEI界面的配方添加(界面依旧是原来的)")

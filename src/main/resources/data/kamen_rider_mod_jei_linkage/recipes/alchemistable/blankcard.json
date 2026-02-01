@@ -4,7 +4,7 @@
   "experinence": 0,
   "ingredients": [
 
-    {"item": "minecraft:paper"},
+    {"item": "minecraft:paper","count": 3},
     {"item": "minecraft:paper"},
     {"item": "kamen_rider_gotchard:gotchardstone"},
     {"item": "kamen_rider_gotchard:gotchardstone"},
