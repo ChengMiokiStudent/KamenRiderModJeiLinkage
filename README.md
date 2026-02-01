@@ -27,7 +27,7 @@
 
 ## 许可证
 
-- [Academic Free License v3.0]()
+- [MIT]()
 
 ## 更新记录
 - 1.3.2
